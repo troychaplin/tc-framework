@@ -1,0 +1,16 @@
+# Core Config
+.env
+
+# package.json
+package-lock.json
+
+# Dist
+/dist
+/release
+
+# Folders
+/node_modules
+
+# System
+.DS_Store
+.vscode/*

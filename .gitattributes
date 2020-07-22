@@ -1,0 +1,16 @@
+# Files
+/.babelrc
+/.browserslistrc export-ignore
+/.gitattributes export-ignore
+/.gitignore export-ignore
+/.jshintrc export-ignore
+/.postcssrc.js export-ignore
+/.prettierrc.json export-ignore
+/composer.json export-ignore
+/package.json export-ignore
+/package-lock.json export-ignore
+/README.md export-ignore
+/webpack.config.js export-ignore
+
+# Folders
+/src export-ignore

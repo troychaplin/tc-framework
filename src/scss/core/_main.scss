@@ -1,0 +1,38 @@
+/**
+ * HTML Elements
+ */
+
+//
+// HTML / Body
+// -----------------------------
+
+body {
+    color: $greyDarkest;
+    font-family: $fontBody;
+    margin: 0;
+}
+
+//
+// Adding Block Level
+// -----------------------------
+
+main,
+figure,
+img,
+video,
+audio,
+time,
+cite {
+    display: block;
+}
+
+figure,
+img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Add spacing to figure outside u-block
+:not(.u-block) > figure {
+    padding: 0 $blockSpacingSmall;
+}

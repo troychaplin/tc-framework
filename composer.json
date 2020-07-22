@@ -1,0 +1,22 @@
+{
+    "name": "troychaplin79/wp-starter",
+    "description": "WordPress starter theme",
+    "keywords": [
+        "wordpress",
+        "theme"
+    ],
+    "homepage": "https://troychaplin.ca",
+    "license": "MIT",
+    "type": "wordpress-theme",
+    "authors": [
+        {
+            "name": "Troy Chaplin",
+            "email": "troy.chaplin@gmail.com",
+            "homepage": "https://troychaplin.ca"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "composer/installers": "1.*"
+    }
+}

@@ -1,0 +1,155 @@
+/**
+ * Utility Blocks
+ */
+
+//
+// Element Width
+// -----------------------------
+
+// Set max-width on direct descendants of u-block
+.u-block > * {
+    max-width: #{map-get($breakpoints, s)};
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Set max-width on direct descendants of main that are not u-block
+main > *:not(.u-block) {
+    max-width: #{map-get($breakpoints, s) + $blockSpacingSmall * 2};
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//
+// Utility Block
+// -----------------------------
+
+// Set u-block spacing
+.u-block {
+    padding: $blockSpacingSmall;
+
+    @include media(">s") {
+        padding-top: $blockSpacingLarge;
+        padding-bottom: $blockSpacingLarge;
+    }
+}
+
+// Remove spacing on first item inside u-block
+.u-block > *:first-child {
+    margin-top: 0;
+}
+
+// Remove spacing on last item inside u-block
+.u-block > *:last-child {
+    margin-bottom: 0;
+}
+
+// Add spacing to u-block that immediately follow base markup
+*:not(.u-block) + .u-block {
+    margin-top: $blockSpacingSmall;
+
+    @include media(">s") {
+        margin-top: $blockSpacingLarge;
+    }
+}
+
+//
+// Base Markup
+// -----------------------------
+
+// Add spacing to outside of base markup
+main > *:not(.u-block) {
+    padding: 0 $blockSpacingSmall;
+}
+
+// Add spacing if last item is base markup
+main > *:not(.u-block):last-child {
+    margin-bottom: $blockSpacingSmall;
+
+    @include media(">s") {
+        margin-bottom: $blockSpacingLarge;
+    }
+}
+
+// Add spacing if first item is base markup
+main > *:not(.u-block):first-child {
+    padding-top: $blockSpacingSmall;
+    margin-top: 0;
+
+    @include media(">s") {
+        padding-top: $blockSpacingLarge;
+    }
+}
+
+// Add spacing to base markup that immediately follows u-block
+.u-block + *:not(.u-block):not(main) {
+    margin-top: 0;
+    padding-top: $blockSpacingSmall;
+
+    @include media(">s") {
+        padding-top: $blockSpacingLarge - 5px;
+    }
+}
+
+//
+// Block Widths
+// -----------------------------
+
+// Modifier to increase block width to large breakpoint
+.u-block--l > * {
+    max-width: #{map-get($breakpoints, l)};
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Modifier to remove block width and padding
+.u-block--f {
+    padding: 0;
+
+    > * {
+        max-width: 100%;
+    }
+
+    @include media(">s") {
+        padding: 0;
+    }
+}
+
+//
+// Block Colors
+// -----------------------------
+
+.u-block--grey {
+    background-color: $greyLightest;
+}
+
+.u-block--black {
+    background-color: $black;
+    color: white;
+}
+
+.u-block--fadeout {
+    background-image: linear-gradient(to bottom, $greyLightest, white 120px);
+}
+
+.u-block--fadein {
+    background-image: linear-gradient(to top, $greyLightest, white 120px);
+}
+
+//
+// Block Spacing
+// -----------------------------
+
+// Remove top padding when the same u-blocks follow each other
+.u-block:not(.u-block--grey) + .u-block:not(.u-block--grey),
+.u-block--grey:not(.u-block--full) + .u-block--grey,
+.u-block--black:not(.u-block--full) + .u-block--black,
+.u-block--fadeout:not(.u-block--full) + .u-block--white {
+    padding-top: 0;
+}
+
+// Remove top padding between u-block and non u-block
+.u-block:not(.u-block--grey) + *:not(.u-block),
+*:not(.u-block) + .u-block:not(.u-block--grey) {
+    padding-top: 0;
+}

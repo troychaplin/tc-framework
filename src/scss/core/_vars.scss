@@ -1,0 +1,62 @@
+/**
+ * Global Variables
+ */
+
+//
+// Breakpoints
+// -----------------------------
+
+$breakpoints: (
+    s: 768px,
+    l: 1024px,
+);
+
+//
+// Spacing
+// -----------------------------
+
+$typographySpacing: 20px !default;
+$blockSpacingSmall: 25px !default;
+$blockSpacingLarge: 40px !default;
+
+$gridSpacing: $blockSpacingSmall !default;
+
+//
+// Fonts
+// -----------------------------
+
+$fontBody: -apple-system, "blinkmacsystemfont", "Segoe UI", "Roboto",
+    "Helvetica Neue", "Helvetica", "Arial", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+
+$fontHeader: -apple-system, "blinkmacsystemfont", "Segoe UI", "Roboto",
+    "Helvetica Neue", "Helvetica", "Arial", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+
+//
+// Colors
+// -----------------------------
+
+// Base Black/Grey
+$black: #222222;
+$grey: #c9c9c9;
+
+// Dark Greys
+$greyDarkest: #4c4c4c;
+$greyDarker: #838383;
+$greyDark: #a7a6a5;
+
+// Light Greys
+$greyLight: #dfdfdf;
+$greyLighter: #efefef;
+$greyLightest: #f3f3f3;
+
+// Blues
+$primary: #146e50;
+$secondary: #683f18;
+
+//
+// Others
+// -----------------------------
+
+$transition2: all 0.2s ease-out;
