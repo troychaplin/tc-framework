@@ -1,3 +1,13 @@
-# IDC HTML
+# HTML Block Framework
 
-HTML version of 2020 IDC Site
+## Setup
+
+-   Clone repo into a folder in any local dev environment
+-   Update `proxy` url on line 121 of `webpack.config.js`
+-   Run `npm install`
+
+## Build and Watch
+
+-   To build the resources run `npm run build`
+-   To launch a watch task run `npm run watch`
+-   To build in prod mode run `npm run prod`
