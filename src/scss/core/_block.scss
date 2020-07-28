@@ -140,16 +140,32 @@ main > *:not(.u-block):first-child {
 // Block Spacing
 // -----------------------------
 
-// Remove top padding when the same u-blocks follow each other
-.u-block:not(.u-block--grey) + .u-block:not(.u-block--grey),
+// Base blocks
+.u-block--white:not(.u-block--full) + .u-block--white,
 .u-block--grey:not(.u-block--full) + .u-block--grey,
-.u-block--black:not(.u-block--full) + .u-block--black,
-.u-block--fadeout:not(.u-block--full) + .u-block--white {
+.u-block--black:not(.u-block--full) + .u-block--black {
     padding-top: 0;
 }
 
-// Remove top padding between u-block and non u-block
-.u-block:not(.u-block--grey) + *:not(.u-block),
-*:not(.u-block) + .u-block:not(.u-block--grey) {
+// Fade blocks
+.u-block--grey:not(.u-block--full) + .u-block--fadeout,
+.u-block--white:not(.u-block--full) + .u-block--fadein,
+.u-block--fadeout:not(.u-block--full) + .u-block--white,
+.u-block--fadeout:not(.u-block--full) + .u-block--fadein,
+.u-block--fadein:not(.u-block--full) + .u-block--grey {
     padding-top: 0;
 }
+
+// // Remove top padding when the same u-blocks follow each other
+// .u-block:not(.u-block--grey) + .u-block:not(.u-block--grey),
+// .u-block--grey:not(.u-block--full) + .u-block--grey,
+// .u-block--black:not(.u-block--full) + .u-block--black,
+// .u-block--fadeout:not(.u-block--full) + .u-block--white {
+//     padding-top: 0;
+// }
+
+// // Remove top padding between u-block and non u-block
+// .u-block:not(.u-block--grey) + *:not(.u-block),
+// *:not(.u-block) + .u-block:not(.u-block--grey) {
+//     padding-top: 0;
+// }
