@@ -101,7 +101,7 @@ figure.wp-block-image {
     }
 
     .comment-author {
-        font-family: $fontBody;
+        font-family: $fontFamily;
         font-size: 24px;
         font-weight: 400;
         color: $primary;
@@ -112,7 +112,7 @@ figure.wp-block-image {
     }
 
     .comment-meta {
-        font-family: $fontBody;
+        font-family: $fontFamily;
         padding-bottom: 10px;
 
         a {
@@ -173,7 +173,7 @@ figure.wp-block-image {
 
     input,
     textarea {
-        font-family: $fontBody;
+        font-family: $fontFamily;
         font-size: 16px;
         line-height: 1.5;
         color: $black;

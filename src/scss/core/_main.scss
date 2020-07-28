@@ -8,8 +8,12 @@
 
 body {
     color: $greyDarkest;
-    font-family: $fontBody;
+    font-family: $fontFamily;
     margin: 0;
+}
+
+:focus {
+    outline: solid rgba($primary, 0.5) 2px;
 }
 
 //

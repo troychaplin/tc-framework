@@ -10,15 +10,12 @@ a {
     color: $primary;
     font-weight: 700;
     text-decoration: none;
+    transition: $transition2;
     cursor: pointer;
 
     &:hover {
         color: $secondary;
         text-decoration: underline;
-    }
-
-    &:focus {
-        outline: 0 none;
     }
 }
 
@@ -28,8 +25,19 @@ a {
 // -----------------------------
 
 button {
+    font-size: 16px;
+    color: $black;
+    padding: $typographySpacing $blockSpacingLarge;
+    background-color: white;
+    border: 1px solid $primary;
+    border-radius: 3px;
+    transition: $transition2;
     cursor: pointer;
-    display: none;
+
+    &:hover {
+        color: white;
+        background-color: $primary;
+    }
 }
 
 //
@@ -42,8 +50,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $fontHeader;
-    font-weight: 500;
+    font-family: $fontFamily;
+    font-weight: 700;
     line-height: 1;
     margin: 0 0 $typographySpacing 0;
 }
