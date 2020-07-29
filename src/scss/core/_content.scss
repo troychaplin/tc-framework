@@ -21,22 +21,22 @@ a {
 
 //
 // Links / Buttons
-// TODO remove display:none and fix button spacing
 // -----------------------------
 
 button {
     font-size: 16px;
-    color: $black;
+    color: white;
     padding: $typographySpacing $blockSpacingLarge;
-    background-color: white;
-    border: 1px solid $primary;
+    background-color: $greyDarker;
+    border: 1px solid $greyDarker;
     border-radius: 3px;
     transition: $transition2;
     cursor: pointer;
 
     &:hover {
         color: white;
-        background-color: $primary;
+        background-color: $greyDarkest;
+        border-color: $greyDarkest;
     }
 }
 
@@ -53,7 +53,7 @@ h6 {
     font-family: $fontFamily;
     font-weight: 700;
     line-height: 1;
-    margin: 0 0 $typographySpacing 0;
+    margin: 0 0 $blockSpacingSmall/2 0;
 }
 
 h1 {
@@ -65,18 +65,18 @@ h1 {
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 28px;
 
     @include media(">s") {
-        font-size: 40px;
+        font-size: 34px;
     }
 }
 
 h3 {
-    font-size: 26px;
+    font-size: 22px;
 
     @include media(">s") {
-        font-size: 34px;
+        font-size: 26px;
     }
 }
 
@@ -84,18 +84,11 @@ h4 {
     font-size: 18px;
 
     @include media(">s") {
-        font-size: 24px;
+        font-size: 22px;
     }
 }
 
-h5 {
-    font-size: 16px;
-
-    @include media(">s") {
-        font-size: 20px;
-    }
-}
-
+h5,
 h6 {
     font-size: 15px;
 
@@ -112,7 +105,7 @@ p,
 ul,
 ol {
     font-size: 16px;
-    line-height: 1.7;
+    line-height: 1.6;
     margin: 0 0 $typographySpacing 0;
 
     @include media(">s") {
