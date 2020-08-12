@@ -105,7 +105,7 @@ figure.wp-block-image {
         font-family: $fontFamily;
         font-size: 24px;
         font-weight: 400;
-        color: $blue;
+        color: $primary;
 
         cite {
             font-style: normal;
@@ -146,7 +146,7 @@ figure.wp-block-image {
 .c-comments .comment-reply-link {
     font-size: 14px;
     color: white;
-    background-color: $blue;
+    background-color: $primary;
     padding: 10px 25px;
     border-radius: 3px;
     transition: $transition2;
@@ -206,7 +206,7 @@ figure.wp-block-image {
         text-align: center;
         text-transform: capitalize;
         white-space: nowrap;
-        background-color: $blue;
+        background-color: $primary;
         padding: 10px 25px;
         border-radius: 3px;
         border: none;
