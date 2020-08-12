@@ -76,7 +76,6 @@
         display: flex;
         flex-wrap: wrap;
         margin-bottom: -#{$blockSpacingSmall} !important;
-        // margin-bottom: -#{$gridSpacing} !important;
 
         & + .c-button {
             margin-top: 50px !important;
@@ -87,7 +86,6 @@
 
             @include media(">s") {
                 margin-bottom: $gridSpacing;
-                // grid-gap: $gridSpacing;
             }
 
             &:not(:last-child) {
@@ -97,7 +95,7 @@
     }
 
     .u-grid--2 > * {
-        width: calc(50% - #{$gridSpacing - 10});
+        width: calc(50% - #{$gridSpacing - 15});
 
         &:nth-child(2n) {
             margin-right: 0 !important;
@@ -105,7 +103,7 @@
     }
 
     .u-grid--3 > * {
-        width: calc(33.333333% - #{$gridSpacing - 6.5});
+        width: calc(33.333333% - #{$gridSpacing - 10});
 
         &:nth-child(3n) {
             margin-right: 0 !important;
@@ -113,7 +111,7 @@
     }
 
     .u-grid--4 > * {
-        width: calc(25% - #{$gridSpacing - 5});
+        width: calc(25% - #{$gridSpacing - 7.5});
 
         &:nth-child(4n) {
             margin-right: 0 !important;

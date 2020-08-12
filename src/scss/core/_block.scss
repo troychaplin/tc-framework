@@ -44,8 +44,8 @@ main > *:not(.u-block) {
     margin-bottom: 0;
 }
 
-// Add spacing to u-block that immediately follow base markup
-*:not(.u-block) + .u-block {
+// Add spacing to u-block that immediately follow base markup, remove space on u-block following main
+*:not(.u-block):not(main):not(.u-grid) + .u-block {
     margin-top: $blockSpacingSmall;
 
     @include media(">s") {
@@ -62,7 +62,7 @@ main > *:not(.u-block) {
     padding: 0 $blockSpacingSmall;
 }
 
-// Add spacing if last item is base markup
+// Add spacing of last item is base markup
 main > *:not(.u-block):last-child {
     margin-bottom: $blockSpacingSmall;
 
@@ -144,7 +144,13 @@ main > *:not(.u-block):first-child {
 .u-block--white:not(.u-block--full) + .u-block--white,
 .u-block--grey:not(.u-block--full) + .u-block--grey,
 .u-block--black:not(.u-block--full) + .u-block--black {
+    // padding-top: $blockSpacingSmall/2;
     padding-top: 0;
+
+    @include media(">s") {
+        // padding-top: $typographySpacing;
+        padding-top: 0;
+    }
 }
 
 // Fade blocks
@@ -155,17 +161,3 @@ main > *:not(.u-block):first-child {
 .u-block--fadein:not(.u-block--full) + .u-block--grey {
     padding-top: 0;
 }
-
-// // Remove top padding when the same u-blocks follow each other
-// .u-block:not(.u-block--grey) + .u-block:not(.u-block--grey),
-// .u-block--grey:not(.u-block--full) + .u-block--grey,
-// .u-block--black:not(.u-block--full) + .u-block--black,
-// .u-block--fadeout:not(.u-block--full) + .u-block--white {
-//     padding-top: 0;
-// }
-
-// // Remove top padding between u-block and non u-block
-// .u-block:not(.u-block--grey) + *:not(.u-block),
-// *:not(.u-block) + .u-block:not(.u-block--grey) {
-//     padding-top: 0;
-// }

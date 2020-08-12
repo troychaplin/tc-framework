@@ -18,6 +18,7 @@
 
 .wp-block-image {
     margin-bottom: $blockSpacingSmall;
+    display: block;
 
     img {
         background-color: $grey;
@@ -37,12 +38,12 @@
 
     .alignleft {
         float: left;
-        margin: 0 $blockSpacingLarge $blockSpacingSmall 0;
+        margin: 10px $blockSpacingSmall $blockSpacingSmall 0;
     }
 
     .alignright {
         float: right;
-        margin: 0 0 $blockSpacingSmall $blockSpacingLarge;
+        margin: 10px 0 $blockSpacingSmall $blockSpacingSmall;
     }
 
     .alignleft.size-large,
@@ -104,7 +105,7 @@ figure.wp-block-image {
         font-family: $fontFamily;
         font-size: 24px;
         font-weight: 400;
-        color: $primary;
+        color: $blue;
 
         cite {
             font-style: normal;
@@ -145,14 +146,14 @@ figure.wp-block-image {
 .c-comments .comment-reply-link {
     font-size: 14px;
     color: white;
-    background-color: $primary;
+    background-color: $blue;
     padding: 10px 25px;
     border-radius: 3px;
     transition: $transition2;
 
     &:hover {
         color: white;
-        background-color: $secondary;
+        background-color: $orange;
     }
 }
 
@@ -205,7 +206,7 @@ figure.wp-block-image {
         text-align: center;
         text-transform: capitalize;
         white-space: nowrap;
-        background-color: $primary;
+        background-color: $blue;
         padding: 10px 25px;
         border-radius: 3px;
         border: none;
@@ -213,7 +214,7 @@ figure.wp-block-image {
 
         &:hover {
             color: white;
-            background-color: $secondary;
+            background-color: $orange;
         }
 
         @include media(">s") {
