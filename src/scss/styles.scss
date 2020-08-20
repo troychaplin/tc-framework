@@ -8,6 +8,7 @@
 
 @import "~minireset.css/minireset.sass";
 @import "~include-media/dist/_include-media.scss";
+// @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 
 //
 // Core
@@ -19,6 +20,7 @@
 @import "core/main";
 @import "core/layouts";
 @import "core/content";
+@import "core/asides";
 @import "core/wordpress";
 @import "core/utils";
 
