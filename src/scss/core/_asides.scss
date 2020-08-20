@@ -1,9 +1,9 @@
 /**
- * Utility Blocks
+ * Asides
  */
 
 //
-// Utility Block Modifications
+// Utility Block Mods
 // -----------------------------
 
 // Reduce spacing for u-block inside aside
@@ -16,7 +16,14 @@ aside .u-block {
     }
 }
 
-// If first child is u-block--white
+// Remove right padding on u-block--white
+@include media(">s") {
+    aside .u-block--white {
+        padding-right: 0;
+    }
+}
+
+// Reduce top spacing if first child is u-block--white
 aside .u-block--white:first-child {
     padding-top: $typographySpacing/2;
 }
