@@ -29,3 +29,35 @@
         height: auto;
     }
 }
+
+//
+// Social Media Colors
+// -----------------------------
+
+.u-facebook-icon svg path {
+    fill: $facebook;
+}
+
+.u-twitter-icon svg path {
+    fill: $twitter;
+}
+
+.u-youtube-icon svg path {
+    fill: $youtube;
+}
+
+.u-instagram-icon svg path {
+    fill: $instagram;
+}
+
+.u-pinterest-icon svg path {
+    fill: $pinterest;
+}
+
+.u-linkedin-icon svg path {
+    fill: $linkedin;
+}
+
+.u-reddit-icon svg path {
+    fill: $reddit;
+}
