@@ -6,16 +6,6 @@
 // Utility Block Mods
 // -----------------------------
 
-// Reduce spacing for u-block inside aside
-aside .u-block {
-    padding: $typographySpacing $blockSpacingSmall;
-
-    @include media(">s") {
-        padding-top: $typographySpacing;
-        padding-bottom: $typographySpacing;
-    }
-}
-
 // Remove right padding on u-block--white
 @include media(">s") {
     aside .u-block--white {
@@ -26,4 +16,9 @@ aside .u-block {
 // Reduce top spacing if first child is u-block--white
 aside .u-block--white:first-child {
     padding-top: $typographySpacing/2;
+}
+
+// Reduce bottom spacing if last child is u-block--white
+aside .u-block--white:last-child {
+    padding-bottom: $typographySpacing/2;
 }
