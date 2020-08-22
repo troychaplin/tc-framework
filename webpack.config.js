@@ -93,6 +93,10 @@ module.exports = {
                         destination: "./release/_examples",
                     },
                     {
+                        source: "./asides",
+                        destination: "./release/blocks",
+                    },
+                    {
                         source: "./blocks",
                         destination: "./release/blocks",
                     },
@@ -105,10 +109,6 @@ module.exports = {
                         destination: "./release/dist",
                     },
                     {
-                        source: "./layouts",
-                        destination: "./release/layouts",
-                    },
-                    {
                         source: "./*.php",
                         destination: "./release",
                     },
@@ -118,14 +118,14 @@ module.exports = {
         new BrowserSyncPlugin({
             host: "localhost",
             port: 3000,
-            proxy: "https://local.troychaplin.ca/framework",
+            proxy: "https://local.framework.ca",
             files: [
                 "*.php",
                 "_examples/*",
+                "asides/**/*",
                 "blocks/**/*",
                 "components/**/*",
                 "dist/**/*",
-                "layouts/**/*",
             ],
             watchOptions: {
                 ignoreInitial: true,

@@ -1,23 +1,33 @@
 {
-    "name": "idc-html",
-    "version": "0.0.1",
-    "description": "HTML version of 2020 IDC Site",
-    "main": "webpack.config.js",
-    "author": "Troy Chaplin",
-    "license": "GPL-2.0",
-    "keywords": [
-        "webpack",
-        "html"
-    ],
+    "name": "tc-framework",
+    "version": "0.0.0",
+    "description": "TC Design Framework",
+    "main": "./src/js/index.js",
     "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
         "watch": "webpack --mode=development --config webpack.config.js --watch --colors",
         "build": "webpack --mode=production --config webpack.config.js"
     },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/troychaplin79/tc-framework.git"
+    },
+    "keywords": [
+        "css",
+        "markup",
+        "grid"
+    ],
+    "author": "Troy Chaplin",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/troychaplin79/tc-framework/issues"
+    },
+    "homepage": "https://github.com/troychaplin79/tc-framework#readme",
     "dependencies": {
         "dompurify": "^2.0.12"
     },
     "devDependencies": {
-        "@babel/core": "^7.11.1",
+        "@babel/core": "^7.11.4",
         "@babel/plugin-transform-runtime": "^7.11.0",
         "@babel/polyfill": "^7.10.4",
         "@babel/preset-env": "^7.11.0",
@@ -25,7 +35,7 @@
         "babel-loader": "^8.1.0",
         "browser-sync": "^2.26.12",
         "browser-sync-webpack-plugin": "^2.2.2",
-        "compression-webpack-plugin": "^5.0.0",
+        "compression-webpack-plugin": "^5.0.1",
         "copy-webpack-plugin": "^6.0.3",
         "css-loader": "^4.2.1",
         "css-mqpacker": "^7.0.0",
