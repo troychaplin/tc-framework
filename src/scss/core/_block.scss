@@ -82,13 +82,26 @@ main > *:not(.u-block):first-child {
 }
 
 // Add spacing to base markup that immediately follows u-block
-.u-block + *:not(.u-block):not(main) {
+.u-block + *:not(.u-block):not(main),
+.u-block--grey + *:not(.u-block):not(main) {
     margin-top: 0;
     padding-top: $blockSpacingSmall;
 
     @include media(">s") {
         padding-top: $blockSpacingLarge - 5px;
     }
+}
+
+.u-block--white + *:not(.u-block):not(main) {
+    padding-top: 0;
+
+    @include media(">s") {
+        padding-top: 0;
+    }
+}
+
+:not(.u-block) + .u-block--white {
+    padding-top: 0;
 }
 
 //
