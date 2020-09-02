@@ -92,7 +92,7 @@ main > *:not(.u-block):first-child {
     }
 }
 
-.u-block--white + *:not(.u-block):not(main) {
+.u-block--white + *:not(.u-block):not(main):not(header):not(footer):not(nav) {
     padding-top: 0;
 
     @include media(">s") {
@@ -100,7 +100,7 @@ main > *:not(.u-block):first-child {
     }
 }
 
-:not(.u-block) + .u-block--white {
+:not(.u-block):not(main):not(header):not(footer):not(nav) + .u-block--white {
     padding-top: 0;
 }
 
