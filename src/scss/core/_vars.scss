@@ -29,6 +29,9 @@ $fontFamily: -apple-system, "blinkmacsystemfont", "Segoe UI", "Roboto",
     "Helvetica Neue", "Helvetica", "Arial", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
 
+$fontSizeSmall: 16px;
+$fontSizeLarge: 18px;
+
 //
 // Colors
 // -----------------------------
@@ -55,6 +58,7 @@ $secondary: #683f18;
 // Others
 // -----------------------------
 
+$borderRadius: 3px;
 $transition2: all 0.2s ease-out;
 
 //
