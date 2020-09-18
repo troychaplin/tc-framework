@@ -31,7 +31,7 @@ button,
     color: white;
     padding: 18px 28px;
     background-color: $greyDarker;
-    border-radius: 3px;
+    border-radius: $borderRadius;
     transition: $transition2;
     cursor: pointer;
 
