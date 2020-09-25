@@ -1,0 +1,120 @@
+/**
+ * CSS Grid with Flex Fallback
+ */
+
+//
+// CSS Grid Styles
+// -----------------------------
+
+.u-grid {
+    display: grid;
+    grid-gap: $blockSpacingSmall;
+
+    @include media(">s") {
+        grid-gap: $gridSpacing;
+    }
+}
+
+// Add spacing to consecutive u-grids
+.u-grid + .u-grid {
+    padding-top: $blockSpacingSmall;
+}
+
+.u-grid--2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.u-grid--3 {
+    grid-template-columns: repeat(2, 1fr);
+
+    @include media(">s") {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.u-grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+
+    @include media(">s") {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+//
+// CSS Grid Modifiers
+// -----------------------------
+
+// Stack grid items for mobile
+@include media("<=s") {
+    .u-grid--stack {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+// Tighten up grid gap
+.u-grid--tight {
+    grid-gap: 5px;
+
+    @include media(">s") {
+        grid-gap: 5px;
+    }
+}
+
+// Remove grid gap
+.u-grid--flush {
+    grid-gap: 0;
+}
+
+//
+// Flexbox Fallback Styles
+// -----------------------------
+
+// TODO: look into @support grid
+@media screen and (-ms-high-contrast: active),
+    screen and (-ms-high-contrast: none) {
+    .u-grid {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: -#{$blockSpacingSmall} !important;
+
+        & + .c-button {
+            margin-top: 50px !important;
+        }
+
+        & > * {
+            margin-bottom: $blockSpacingSmall;
+
+            @include media(">s") {
+                margin-bottom: $gridSpacing;
+            }
+
+            &:not(:last-child) {
+                margin-right: $gridSpacing;
+            }
+        }
+    }
+
+    .u-grid--2 > * {
+        width: calc(50% - #{$gridSpacing - 15});
+
+        &:nth-child(2n) {
+            margin-right: 0 !important;
+        }
+    }
+
+    .u-grid--3 > * {
+        width: calc(33.333333% - #{$gridSpacing - 10});
+
+        &:nth-child(3n) {
+            margin-right: 0 !important;
+        }
+    }
+
+    .u-grid--4 > * {
+        width: calc(25% - #{$gridSpacing - 7.5});
+
+        &:nth-child(4n) {
+            margin-right: 0 !important;
+        }
+    }
+}

@@ -1,0 +1,238 @@
+/**
+ * WordPress Styles
+ */
+
+//
+// Adminbar Modifications
+// -----------------------------
+
+@media (min-width: 782px) {
+    .logged-in.admin-bar .b-navbar {
+        top: 32px;
+    }
+}
+
+//
+// Images
+// -----------------------------
+
+.wp-block-image {
+    margin-bottom: $blockSpacingSmall;
+    display: block;
+
+    img {
+        background-color: $grey;
+        max-width: 100%;
+    }
+
+    figure {
+        padding: 0;
+    }
+}
+
+// Add styles for alignment
+.wp-block-image {
+    .aligncenter {
+        margin: 0 auto;
+    }
+
+    .alignleft {
+        float: left;
+        margin: 10px $blockSpacingSmall $blockSpacingSmall 0;
+    }
+
+    .alignright {
+        float: right;
+        margin: 10px 0 $blockSpacingSmall $blockSpacingSmall;
+    }
+
+    .alignleft.size-large,
+    .alignright.size-large,
+    .alignleft.size-full,
+    .alignright.size-full {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+// Fix space on captions for images without alignment that live outside of u-block
+:not(.u-block) > figure.wp-block-image figcaption {
+    margin: 0 $blockSpacingSmall;
+}
+
+// Set display:table when captions are being used
+.wp-block-image figure,
+figure.wp-block-image {
+    display: table;
+}
+
+.wp-block-image figcaption {
+    caption-side: bottom;
+    display: table-caption;
+    font-style: italic;
+    font-size: 15px;
+    color: $greyDarkest;
+    line-height: 1.5;
+    background-color: $greyLightest;
+    padding: $typographySpacing $blockSpacingSmall;
+    margin-top: 0;
+}
+
+//
+// Main Comment Styles
+// TODO needs review and testing
+// -----------------------------
+
+.c-comments {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.c-comments .comment-body {
+    display: block;
+    content: "";
+    clear: both;
+
+    img {
+        float: left;
+        width: 80px;
+        height: 80px;
+        margin: 0 20px 10px 0;
+    }
+
+    .comment-author {
+        font-family: $fontFamily;
+        font-size: 24px;
+        font-weight: 400;
+        color: $primary;
+
+        cite {
+            font-style: normal;
+        }
+    }
+
+    .comment-meta {
+        font-family: $fontFamily;
+        padding-bottom: 10px;
+
+        a {
+            font-size: 16px;
+            font-weight: 400;
+            color: $black;
+        }
+    }
+}
+
+.c-comments .children {
+    list-style-type: none;
+    margin: 25px 0;
+    padding: 0 0 0 30px;
+    border-left: 1px solid $greyLight;
+
+    @include media(">s") {
+        margin-left: 40px;
+    }
+
+    li {
+        padding: 20px 0 0;
+
+        &:last-child {
+            padding-bottom: 20px;
+        }
+    }
+}
+
+.c-comments .comment-reply-link {
+    font-size: 14px;
+    color: white;
+    background-color: $primary;
+    padding: 10px 25px;
+    border-radius: 3px;
+    transition: $transition2;
+
+    &:hover {
+        color: white;
+        background-color: $secondary;
+    }
+}
+
+.comment-form-comment,
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
+    label {
+        display: block;
+        width: 100%;
+        font-weight: 700;
+        margin-bottom: 10px;
+
+        .required {
+            color: red;
+        }
+    }
+
+    input,
+    textarea {
+        font-family: $fontFamily;
+        font-size: 16px;
+        line-height: 1.5;
+        color: $black;
+        width: 100%;
+        padding: 20px 25px;
+        border: 1px solid $greyLighter;
+        background-color: $greyLightest;
+
+        @include media(">s") {
+            font-size: 18px;
+        }
+    }
+}
+
+@include media(">s") {
+    .comment-form-author,
+    .comment-form-email,
+    .comment-form-url {
+        input {
+            width: 60%;
+        }
+    }
+}
+
+.comment-form {
+    .submit {
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        text-transform: capitalize;
+        white-space: nowrap;
+        background-color: $primary;
+        padding: 10px 25px;
+        border-radius: 3px;
+        border: none;
+        transition: $transition2;
+
+        &:hover {
+            color: white;
+            background-color: $secondary;
+        }
+
+        @include media(">s") {
+            font-size: 16px;
+            padding: 15px 30px;
+        }
+    }
+}
+
+.comment-form-cookies-consent {
+    display: flex;
+    align-items: center;
+
+    input {
+        flex: 0 0 25px;
+    }
+
+    label {
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,63 @@
+/**
+ * Utility Classes
+ */
+
+//
+// Text Helpers
+// -----------------------------
+
+.u-center-text {
+    text-align: center;
+}
+
+//
+// Accessibility Helpers
+// -----------------------------
+
+.u-visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+
+    a:focus,
+    input:focus,
+    button:focus {
+        position: static;
+        width: auto;
+        height: auto;
+    }
+}
+
+//
+// Social Media Colors
+// -----------------------------
+
+.u-facebook-icon svg path {
+    fill: $facebook;
+}
+
+.u-twitter-icon svg path {
+    fill: $twitter;
+}
+
+.u-youtube-icon svg path {
+    fill: $youtube;
+}
+
+.u-instagram-icon svg path {
+    fill: $instagram;
+}
+
+.u-pinterest-icon svg path {
+    fill: $pinterest;
+}
+
+.u-linkedin-icon svg path {
+    fill: $linkedin;
+}
+
+.u-reddit-icon svg path {
+    fill: $reddit;
+}

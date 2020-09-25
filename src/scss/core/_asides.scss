@@ -1,0 +1,24 @@
+/**
+ * Asides
+ */
+
+//
+// Utility Block Mods
+// -----------------------------
+
+// Remove right padding on u-block--white
+@include media(">s") {
+    aside .u-block--white {
+        padding-right: 0;
+    }
+}
+
+// Reduce top spacing if first child is u-block--white
+aside .u-block--white:first-child {
+    padding-top: $typographySpacing/2;
+}
+
+// Reduce bottom spacing if last child is u-block--white
+aside .u-block--white:last-child {
+    padding-bottom: $typographySpacing/2;
+}

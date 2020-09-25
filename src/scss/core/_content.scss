@@ -1,0 +1,297 @@
+/**
+ * Content Styles
+ */
+
+//
+// Links
+// -----------------------------
+
+a {
+    color: $primary;
+    font-weight: 700;
+    text-decoration: none;
+    transition: $transition2;
+    cursor: pointer;
+
+    &:hover {
+        color: $secondary;
+        text-decoration: underline;
+    }
+}
+
+//
+// Links / Buttons
+// -----------------------------
+
+button,
+.c-button {
+    display: inline-block;
+    font-size: $fontSizeSmall;
+    font-weight: 400;
+    color: white;
+    padding: 18px 28px;
+    background-color: $greyDarker;
+    border-radius: $borderRadius;
+    transition: $transition2;
+    cursor: pointer;
+
+    @include media(">s") {
+        font-size: $fontSizeLarge;
+    }
+
+    &:hover {
+        color: white;
+        background-color: $greyDarkest;
+        text-decoration: none;
+    }
+}
+
+//
+// Headings
+// -----------------------------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $fontFamily;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0 0 $typographySpacing/2 0;
+
+    @include media(">s") {
+        margin: 0 0 $blockSpacingSmall/2 0;
+    }
+}
+
+h1 {
+    font-size: 36px;
+
+    @include media(">s") {
+        font-size: 46px;
+    }
+}
+
+h2 {
+    font-size: 28px;
+
+    @include media(">s") {
+        font-size: 34px;
+    }
+}
+
+h3 {
+    font-size: 22px;
+
+    @include media(">s") {
+        font-size: 26px;
+    }
+}
+
+h4 {
+    font-size: 18px;
+
+    @include media(">s") {
+        font-size: 22px;
+    }
+}
+
+h5,
+h6 {
+    font-size: 16px;
+
+    @include media(">s") {
+        font-size: 18px;
+    }
+}
+
+//
+// Text Styles
+// -----------------------------
+
+p,
+ul,
+ol {
+    font-size: $fontSizeSmall;
+    line-height: 1.6;
+    margin: 0 0 $typographySpacing 0;
+
+    @include media(">s") {
+        font-size: $fontSizeLarge;
+    }
+}
+
+ul,
+ol {
+    padding: 0;
+
+    li {
+        margin-left: $blockSpacingLarge;
+
+        &:not(:last-child) {
+            padding-bottom: 5px;
+        }
+    }
+
+    // Nested ul and ol
+    ul,
+    ol {
+        margin: 5px 0;
+    }
+}
+
+// Bullet style for ul
+ul {
+    list-style-type: disc;
+
+    // Second level ul
+    ul {
+        list-style-type: circle;
+
+        // All other nested ul
+        ul {
+            list-style-type: square;
+        }
+    }
+}
+
+// Bullet style for ol
+ol {
+    list-style-type: decimal;
+
+    // Second level ol
+    ol {
+        list-style-type: lower-alpha;
+
+        // All other nested ol
+        ol {
+            list-style-type: lower-roman;
+        }
+    }
+}
+
+//
+// Blockquote
+// -----------------------------
+
+// Fix padding on table outside of u-block
+:not(.u-block) > blockquote {
+    max-width: #{map-get($breakpoints, s)};
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 3px solid $greyDark;
+    margin: $blockSpacingSmall 0 $blockSpacingSmall 0;
+    padding: 10px $blockSpacingSmall !important;
+
+    p {
+        margin-bottom: 0;
+    }
+
+    cite {
+        font-size: 16px;
+        margin-top: $blockSpacingSmall;
+    }
+}
+
+//
+// Table
+// -----------------------------
+
+// Fix padding on table outside of u-block that are not wrapped in figure
+:not(.u-block):not(figure) > table {
+    max-width: calc(100% - #{$blockSpacingSmall} * 2);
+    padding-left: 0;
+    padding-right: 0;
+
+    @include media(">s") {
+        max-width: #{map-get($breakpoints, s)};
+    }
+}
+
+// Base table
+table {
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+// Table header row
+table thead tr {
+    color: white;
+    text-align: left;
+    background-color: $greyDarkest;
+}
+
+// Table row
+table tr {
+    background-color: white;
+    border-bottom: 1px solid $grey;
+
+    th,
+    td {
+        vertical-align: top;
+        min-width: 150px;
+        padding: 15px 20px;
+    }
+}
+
+// Style ever 2nd table row
+table tr:nth-child(2n) {
+    background-color: $greyLightest;
+}
+
+// Table footer row
+table tfoot tr {
+    text-align: left;
+    border-bottom: none;
+    background-color: $greyLight;
+}
+
+// Table Caption
+table + figcaption {
+    font-style: italic;
+    margin-bottom: $blockSpacingSmall;
+}
+
+//
+// Image Styles
+// TODO build and finalize base markup and styles
+// -----------------------------
+
+// .c-image {
+//     display: table;
+//     background: rgba(blue, 0.2);
+// }
+
+// .c-image img {
+//     max-width: 100%;
+//     height: auto;
+// }
+
+// .c-image--center img {
+//     margin-left: auto;
+//     margin-right: auto;
+// }
+
+// .c-image--left img {
+//     float: left;
+//     margin: 0 30px 25px 0;
+// }
+
+//
+// Video Styles
+// TODO build and finalize base markup and styles
+// -----------------------------
+
+// video {
+//     width: 100%;
+//     margin-bottom: $typographySpacing;
+// }
