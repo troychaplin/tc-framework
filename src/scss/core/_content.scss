@@ -24,7 +24,8 @@ a {
 // -----------------------------
 
 button,
-.c-button {
+.c-button,
+input[type="submit"] {
     display: inline-block;
     font-size: $fontSizeSmall;
     font-weight: 400;
