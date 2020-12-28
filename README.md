@@ -10,8 +10,8 @@
 
 -   To build the resources run `npm run build`
 -   To launch a watch task run `npm run watch`
--   To build in prod mode run `npm run prod`
 
 ## Publish Package
 
+- For new repo run `npm login`
 - To publish a release run `npm publish`
