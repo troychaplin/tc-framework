@@ -120,7 +120,7 @@ module.exports = {
         new BrowserSyncPlugin({
             host: "localhost",
             port: 3000,
-            proxy: "https://local.framework.ca",
+            proxy: "https://tcframework:8890",
             files: [
                 "*.php",
                 "_examples/*",
