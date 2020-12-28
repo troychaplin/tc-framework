@@ -83,37 +83,39 @@ module.exports = {
             ],
         }),
         new FileManagerPlugin({
-            onStart: {
-                delete: ["./release"],
-            },
-            onEnd: {
-                copy: [
-                    {
-                        source: "./_examples",
-                        destination: "./release/_examples",
-                    },
-                    {
-                        source: "./asides",
-                        destination: "./release/blocks",
-                    },
-                    {
-                        source: "./blocks",
-                        destination: "./release/blocks",
-                    },
-                    {
-                        source: "./components",
-                        destination: "./release/components",
-                    },
-                    {
-                        source: "./dist",
-                        destination: "./release/dist",
-                    },
-                    {
-                        source: "./*.php",
-                        destination: "./release",
-                    },
-                ],
-            },
+            events: {
+                onStart: {
+                    delete: ["./release"],
+                },
+                onEnd: {
+                    copy: [
+                        {
+                            source: "./_examples",
+                            destination: "./release/_examples",
+                        },
+                        {
+                            source: "./asides",
+                            destination: "./release/asides",
+                        },
+                        {
+                            source: "./blocks",
+                            destination: "./release/blocks",
+                        },
+                        {
+                            source: "./components",
+                            destination: "./release/components",
+                        },
+                        {
+                            source: "./dist",
+                            destination: "./release/dist",
+                        },
+                        {
+                            source: "./*.php",
+                            destination: "./release",
+                        },
+                    ],
+                },
+            }
         }),
         new BrowserSyncPlugin({
             host: "localhost",
