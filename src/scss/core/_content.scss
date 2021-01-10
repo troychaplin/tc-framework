@@ -183,21 +183,32 @@ ol {
     max-width: #{map-get($breakpoints, s)};
 }
 
-blockquote {
+blockquote p {
     font-style: italic;
     border-left: 3px solid $greyDark;
-    margin: $blockSpacingSmall 0 $blockSpacingSmall 0;
-    padding: 10px $blockSpacingSmall !important;
-
-    p {
-        margin-bottom: 0;
-    }
-
-    cite {
-        font-size: 16px;
-        margin-top: $blockSpacingSmall;
-    }
+    padding: 10px $blockSpacingSmall;
 }
+
+blockquote cite {
+    font-size: 16px;
+    margin-top: $blockSpacingSmall;
+}
+
+// blockquote {
+//     font-style: italic;
+//     border-left: 3px solid $greyDark;
+//     margin: $blockSpacingSmall 0 $blockSpacingSmall 0;
+//     padding: 10px $blockSpacingSmall !important;
+
+//     p {
+//         margin-bottom: 0;
+//     }
+
+//     cite {
+//         font-size: 16px;
+//         margin-top: $blockSpacingSmall;
+//     }
+// }
 
 //
 // Table
