@@ -30,7 +30,7 @@ input[type="submit"] {
     font-size: $fontSizeSmall;
     font-weight: 400;
     color: white;
-    padding: 18px 28px;
+    padding: 12px 20px;
     background-color: $greyDarker;
     border-radius: $borderRadius;
     transition: $transition2;
@@ -38,6 +38,7 @@ input[type="submit"] {
 
     @include media(">s") {
         font-size: $fontSizeLarge;
+        padding: 18px 28px;
     }
 
     &:hover {
