@@ -30,7 +30,7 @@ input[type="submit"] {
     font-size: $fontSizeSmall;
     font-weight: 400;
     color: white;
-    padding: 18px 28px;
+    padding: 12px 20px;
     background-color: $greyDarker;
     border-radius: $borderRadius;
     transition: $transition2;
@@ -38,6 +38,7 @@ input[type="submit"] {
 
     @include media(">s") {
         font-size: $fontSizeLarge;
+        padding: 18px 28px;
     }
 
     &:hover {
@@ -182,21 +183,32 @@ ol {
     max-width: #{map-get($breakpoints, s)};
 }
 
-blockquote {
+blockquote p {
     font-style: italic;
     border-left: 3px solid $greyDark;
-    margin: $blockSpacingSmall 0 $blockSpacingSmall 0;
-    padding: 10px $blockSpacingSmall !important;
-
-    p {
-        margin-bottom: 0;
-    }
-
-    cite {
-        font-size: 16px;
-        margin-top: $blockSpacingSmall;
-    }
+    padding: 10px $blockSpacingSmall;
 }
+
+blockquote cite {
+    font-size: 16px;
+    margin-top: $blockSpacingSmall;
+}
+
+// blockquote {
+//     font-style: italic;
+//     border-left: 3px solid $greyDark;
+//     margin: $blockSpacingSmall 0 $blockSpacingSmall 0;
+//     padding: 10px $blockSpacingSmall !important;
+
+//     p {
+//         margin-bottom: 0;
+//     }
+
+//     cite {
+//         font-size: 16px;
+//         margin-top: $blockSpacingSmall;
+//     }
+// }
 
 //
 // Table
