@@ -117,7 +117,7 @@ p,
 ul,
 ol {
     font-size: $fontSizeSmall;
-    line-height: 1.6;
+    line-height: 1.5;
     margin: 0 0 $typographySpacing 0;
 
     @include media(">s") {
