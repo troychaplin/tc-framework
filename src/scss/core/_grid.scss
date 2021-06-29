@@ -35,10 +35,6 @@
     }
 }
 
-//
-// CSS Grid Modifiers
-// -----------------------------
-
 // Stack grid items for mobile
 @include media("<=s") {
     .u-grid--mobile2col {
