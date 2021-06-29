@@ -72,9 +72,8 @@ module.exports = {
     },
     plugins: [
         new CompressionPlugin({
-            test: /\.(js|css|map)(\?.*)?$/i,
-            filename: "[path].gz[query]",
-            algorithm: "gzip",
+            test: /\.(js|css)(\?.*)?$/i,
+            algorithm: "gzip", // not required, used here to identify what test is doing
         }),
         new copyWebpackPlugin({
             patterns: [

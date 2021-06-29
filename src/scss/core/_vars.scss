@@ -15,11 +15,11 @@ $breakpoints: (
 // Spacing
 // -----------------------------
 
-$gridSpacing: 30px;
-
 $spacingSmall: 20px;
 $spacingMedium: 30px;
 $spacingLarge: 45px;
+
+$gridSpacing: $spacingMedium;
 
 //
 // Fonts
@@ -38,31 +38,20 @@ $black: #222222;
 $grey: #c9c9c9;
 
 // Dark Greys
-// $greyDarkest: #4c4c4c;
-// $greyDarker: #838383;
-// $greyDark: #a7a6a5;
+$greyDarkest: #4c4c4c;
+$greyDarker: #838383;
+$greyDark: #a7a6a5;
 
 // Light Greys
-// $greyLight: #dfdfdf;
-// $greyLighter: #efefef;
-// $greyLightest: #f3f3f3;
+$greyLight: #dfdfdf;
+$greyLighter: #efefef;
+$greyLightest: #f3f3f3;
 
 // Blues
-// $primary: #146e50;
-// $secondary: #683f18;
+$primary: #146e50;
+$secondary: #683f18;
 
-//
-// Others
-// -----------------------------
-
-// $borderRadius: 3px;
-// $transition2: all 0.2s ease-out;
-
-//
-// Social Media
-// @see https://www.lockedownseo.com/social-media-colors/
-// -----------------------------
-
+// Social Media - https://www.lockedownseo.com/social-media-colors/
 $facebook: #1877f2;
 $twitter: #1da1f2;
 $youtube: #ff0000;
@@ -70,3 +59,10 @@ $instagram: #c32aa3;
 $pinterest: #bd081c;
 $linkedin: #007bb5;
 $reddit: #ff4500;
+
+//
+// Others
+// -----------------------------
+
+$borderRadius: 3px;
+$transition2: all 0.2s ease-out;
