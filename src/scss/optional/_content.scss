@@ -1,0 +1,179 @@
+//
+// Links
+// -----------------------------
+
+a {
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+//
+// Headings
+// -----------------------------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $fontFamily;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 $spacingSmall 0;
+}
+
+h1 {
+    font-size: 36px;
+
+    @include media(">s") {
+        font-size: 46px;
+    }
+}
+
+h2 {
+    font-size: 28px;
+
+    @include media(">s") {
+        font-size: 34px;
+    }
+}
+
+h3 {
+    font-size: 22px;
+
+    @include media(">s") {
+        font-size: 26px;
+    }
+}
+
+h4 {
+    font-size: 18px;
+
+    @include media(">s") {
+        font-size: 22px;
+    }
+}
+
+h5,
+h6 {
+    font-size: 16px;
+
+    @include media(">s") {
+        font-size: 18px;
+    }
+}
+
+//
+// Text Styles
+// -----------------------------
+
+p,
+ul,
+ol {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+
+    &:not(:last-child) {
+        margin-bottom: $spacingSmall;
+    }
+
+    @include media(">s") {
+        font-size: 18px;
+    }
+}
+
+ul li,
+ol li {
+    margin-left: $spacingMedium;
+
+    @include media(">s") {
+        margin-left: $spacingLarge;
+
+        &:not(:last-child) {
+            padding-bottom: 8px;
+        }
+    }
+}
+
+// Nested ul and ol
+ul ul,
+ol ol {
+    margin: 4px 0;
+
+    @include media(">s") {
+        margin: 10px 0 5px 0;
+    }
+}
+
+// Top level unordered list
+ul {
+    list-style-type: disc;
+}
+
+// Second level unordered list
+ul ul {
+    list-style-type: circle;
+}
+
+// Third level unordered list
+ul ul ul {
+    list-style-type: square;
+}
+
+// Top level ordered list
+ol {
+    list-style-type: decimal;
+}
+
+// Second level ordered list
+ol ol {
+    list-style-type: lower-alpha;
+}
+
+// Third level ordered list
+ol ol ol {
+    list-style-type: lower-roman;
+}
+
+//
+// Blockquote
+// -----------------------------
+
+// TODO: Fix padding on blockquote
+// :not(.u-block) > blockquote,
+// .u-block > blockquote {
+//     max-width: #{map-get($breakpoints, s)};
+// }
+
+blockquote {
+    font-style: italic;
+    border-left: 5px solid $grey;
+    padding: 0 $spacingSmall;
+    margin-bottom: $spacingSmall;
+
+    cite {
+        font-size: 16px;
+    }
+}
+
+//
+// Table
+// -----------------------------
+
+// TODO: Fix padding on table
+:not(.u-block):not(figure) > table {
+    // max-width: calc(100% - #{$spacingSmall} * 2);
+    // padding-left: 0;
+    // padding-right: 0;
+
+    // @include media(">s") {
+    max-width: #{map-get($breakpoints, s)};
+    // }
+}

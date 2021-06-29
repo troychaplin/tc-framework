@@ -6,18 +6,18 @@
 // Links
 // -----------------------------
 
-a {
-    color: $primary;
-    font-weight: 700;
-    text-decoration: none;
-    transition: $transition2;
-    cursor: pointer;
+// a {
+//     color: $primary;
+//     font-weight: 700;
+//     text-decoration: none;
+//     transition: $transition2;
+//     cursor: pointer;
 
-    &:hover {
-        color: $secondary;
-        text-decoration: underline;
-    }
-}
+//     &:hover {
+//         color: $secondary;
+//         text-decoration: underline;
+//     }
+// }
 
 //
 // Links / Buttons
@@ -52,147 +52,147 @@ input[type="submit"] {
 // Headings
 // -----------------------------
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: $fontFamily;
-    font-weight: 700;
-    line-height: 1.2;
-    margin: 0 0 $typographySpacing/2 0;
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//     font-family: $fontFamily;
+//     font-weight: 700;
+//     line-height: 1.2;
+//     margin: 0 0 $typographySpacing/2 0;
 
-    @include media(">s") {
-        margin: 0 0 $blockSpacingSmall/2 0;
-    }
-}
+//     @include media(">s") {
+//         margin: 0 0 $blockSpacingSmall/2 0;
+//     }
+// }
 
-h1 {
-    font-size: 36px;
+// h1 {
+//     font-size: 36px;
 
-    @include media(">s") {
-        font-size: 46px;
-    }
-}
+//     @include media(">s") {
+//         font-size: 46px;
+//     }
+// }
 
-h2 {
-    font-size: 28px;
+// h2 {
+//     font-size: 28px;
 
-    @include media(">s") {
-        font-size: 34px;
-    }
-}
+//     @include media(">s") {
+//         font-size: 34px;
+//     }
+// }
 
-h3 {
-    font-size: 22px;
+// h3 {
+//     font-size: 22px;
 
-    @include media(">s") {
-        font-size: 26px;
-    }
-}
+//     @include media(">s") {
+//         font-size: 26px;
+//     }
+// }
 
-h4 {
-    font-size: 18px;
+// h4 {
+//     font-size: 18px;
 
-    @include media(">s") {
-        font-size: 22px;
-    }
-}
+//     @include media(">s") {
+//         font-size: 22px;
+//     }
+// }
 
-h5,
-h6 {
-    font-size: 16px;
+// h5,
+// h6 {
+//     font-size: 16px;
 
-    @include media(">s") {
-        font-size: 18px;
-    }
-}
+//     @include media(">s") {
+//         font-size: 18px;
+//     }
+// }
 
 //
 // Text Styles
 // -----------------------------
 
-p,
-ul,
-ol {
-    font-size: $fontSizeSmall;
-    line-height: 1.5;
-    margin: 0 0 $typographySpacing 0;
+// p,
+// ul,
+// ol {
+//     font-size: $fontSizeSmall;
+//     line-height: 1.5;
+//     margin: 0 0 $typographySpacing 0;
 
-    @include media(">s") {
-        font-size: $fontSizeLarge;
-    }
-}
+//     @include media(">s") {
+//         font-size: $fontSizeLarge;
+//     }
+// }
 
-ul,
-ol {
-    padding: 0;
+// ul,
+// ol {
+//     padding: 0;
 
-    li {
-        margin-left: $blockSpacingLarge;
+//     li {
+//         margin-left: $blockSpacingLarge;
 
-        &:not(:last-child) {
-            padding-bottom: 5px;
-        }
-    }
+//         &:not(:last-child) {
+//             padding-bottom: 5px;
+//         }
+//     }
 
-    // Nested ul and ol
-    ul,
-    ol {
-        margin: 5px 0;
-    }
-}
+//     // Nested ul and ol
+//     ul,
+//     ol {
+//         margin: 5px 0;
+//     }
+// }
 
-// Bullet style for ul
-ul {
-    list-style-type: disc;
+// // Bullet style for ul
+// ul {
+//     list-style-type: disc;
 
-    // Second level ul
-    ul {
-        list-style-type: circle;
+//     // Second level ul
+//     ul {
+//         list-style-type: circle;
 
-        // All other nested ul
-        ul {
-            list-style-type: square;
-        }
-    }
-}
+//         // All other nested ul
+//         ul {
+//             list-style-type: square;
+//         }
+//     }
+// }
 
-// Bullet style for ol
-ol {
-    list-style-type: decimal;
+// // Bullet style for ol
+// ol {
+//     list-style-type: decimal;
 
-    // Second level ol
-    ol {
-        list-style-type: lower-alpha;
+//     // Second level ol
+//     ol {
+//         list-style-type: lower-alpha;
 
-        // All other nested ol
-        ol {
-            list-style-type: lower-roman;
-        }
-    }
-}
+//         // All other nested ol
+//         ol {
+//             list-style-type: lower-roman;
+//         }
+//     }
+// }
 
 //
 // Blockquote
 // -----------------------------
 
-// Fix padding on table outside of u-block
-:not(.u-block) > blockquote {
-    max-width: #{map-get($breakpoints, s)};
-}
+// // Fix padding on table outside of u-block
+// :not(.u-block) > blockquote {
+//     max-width: #{map-get($breakpoints, s)};
+// }
 
-blockquote p {
-    font-style: italic;
-    border-left: 3px solid $greyDark;
-    padding: 10px $blockSpacingSmall;
-}
+// blockquote p {
+//     font-style: italic;
+//     border-left: 3px solid $greyDark;
+//     padding: 10px $blockSpacingSmall;
+// }
 
-blockquote cite {
-    font-size: 16px;
-    margin-top: $blockSpacingSmall;
-}
+// blockquote cite {
+//     font-size: 16px;
+//     margin-top: $blockSpacingSmall;
+// }
 
 // blockquote {
 //     font-style: italic;
