@@ -15,11 +15,11 @@ $breakpoints: (
 // Spacing
 // -----------------------------
 
-$gridSpacing: 30px;
+$typographySpacing: 20px;
+$blockSpacingSmall: 30px;
+$blockSpacingLarge: 45px;
 
-$spacingSmall: 20px;
-$spacingMedium: 30px;
-$spacingLarge: 45px;
+$gridSpacing: 30px;
 
 //
 // Fonts
@@ -28,6 +28,9 @@ $spacingLarge: 45px;
 $fontFamily: -apple-system, "blinkmacsystemfont", "Segoe UI", "Roboto",
     "Helvetica Neue", "Helvetica", "Arial", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
+
+$fontSizeSmall: 16px;
+$fontSizeLarge: 18px;
 
 //
 // Colors
@@ -38,25 +41,25 @@ $black: #222222;
 $grey: #c9c9c9;
 
 // Dark Greys
-// $greyDarkest: #4c4c4c;
-// $greyDarker: #838383;
-// $greyDark: #a7a6a5;
+$greyDarkest: #4c4c4c;
+$greyDarker: #838383;
+$greyDark: #a7a6a5;
 
 // Light Greys
-// $greyLight: #dfdfdf;
-// $greyLighter: #efefef;
-// $greyLightest: #f3f3f3;
+$greyLight: #dfdfdf;
+$greyLighter: #efefef;
+$greyLightest: #f3f3f3;
 
 // Blues
-// $primary: #146e50;
-// $secondary: #683f18;
+$primary: #146e50;
+$secondary: #683f18;
 
 //
 // Others
 // -----------------------------
 
-// $borderRadius: 3px;
-// $transition2: all 0.2s ease-out;
+$borderRadius: 3px;
+$transition2: all 0.2s ease-out;
 
 //
 // Social Media

@@ -1,41 +1,36 @@
-/**
- * CSS Grid with Flex Fallback
- */
-
 //
 // CSS Grid Styles
 // -----------------------------
 
 .u-grid {
     display: grid;
-    grid-gap: $blockSpacingSmall;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: $spacingMedium;
+    margin-top: $spacingMedium;
+    margin-bottom: $spacingMedium;
 
-    @include media(">s") {
-        grid-gap: $gridSpacing;
+    &:last-child {
+        margin-bottom: 0;
     }
 }
 
-// Add spacing to consecutive u-grids
-.u-grid + .u-grid {
-    padding-top: $blockSpacingSmall;
+// Remove margin when grid is first child of u-block
+.u-block > .u-grid:first-child {
+    margin-top: 0;
 }
 
 .u-grid--2 {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.u-grid--3 {
-    grid-template-columns: repeat(2, 1fr);
-
-    @include media(">s") {
+@include media(">s") {
+    .u-grid--3 {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-.u-grid--4 {
-    grid-template-columns: repeat(2, 1fr);
-
-    @include media(">s") {
+@include media(">s") {
+    .u-grid--4 {
         grid-template-columns: repeat(4, 1fr);
     }
 }
@@ -46,75 +41,7 @@
 
 // Stack grid items for mobile
 @include media("<=s") {
-    .u-grid--stack {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-// Tighten up grid gap
-.u-grid--tight {
-    grid-gap: 5px;
-
-    @include media(">s") {
-        grid-gap: 5px;
-    }
-}
-
-// Remove grid gap
-.u-grid--flush {
-    grid-gap: 0;
-}
-
-//
-// Flexbox Fallback Styles
-// -----------------------------
-
-// TODO: look into @support grid
-@media screen and (-ms-high-contrast: active),
-    screen and (-ms-high-contrast: none) {
-    .u-grid {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: -#{$blockSpacingSmall} !important;
-
-        & + .c-button {
-            margin-top: 50px !important;
-        }
-
-        & > * {
-            margin-bottom: $blockSpacingSmall;
-
-            @include media(">s") {
-                margin-bottom: $gridSpacing;
-            }
-
-            &:not(:last-child) {
-                margin-right: $gridSpacing;
-            }
-        }
-    }
-
-    .u-grid--2 > * {
-        width: calc(50% - #{$gridSpacing - 15});
-
-        &:nth-child(2n) {
-            margin-right: 0 !important;
-        }
-    }
-
-    .u-grid--3 > * {
-        width: calc(33.333333% - #{$gridSpacing - 10});
-
-        &:nth-child(3n) {
-            margin-right: 0 !important;
-        }
-    }
-
-    .u-grid--4 > * {
-        width: calc(25% - #{$gridSpacing - 7.5});
-
-        &:nth-child(4n) {
-            margin-right: 0 !important;
-        }
+    .u-grid--mobile2col {
+        grid-template-columns: repeat(2, 1fr);
     }
 }

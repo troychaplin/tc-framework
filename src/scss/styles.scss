@@ -8,28 +8,23 @@
 
 @import "~minireset.css/minireset.sass";
 @import "~include-media/dist/_include-media.scss";
+
+//
+// Google Fonts
+// -------------------------
+
 // @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 
 //
-// Core
+// Framework Core
 // -------------------------
 
 @import "core/vars";
 @import "core/block";
 @import "core/grid";
-@import "core/main";
-@import "core/layouts";
-@import "core/content";
-@import "core/asides";
-@import "core/wordpress";
-@import "core/utils";
-
-// Blocks
-// -------------------------
-
-// @import "../../blocks/path_to_file";
-
-// Components
-// -------------------------
-
-// @import '../../components/path_to_file';
+@import "core/core";
+// @import "core/layouts";
+// @import "core/content";
+// @import "core/asides";
+// @import "core/wordpress";
+// @import "core/utils";
