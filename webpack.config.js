@@ -11,7 +11,7 @@ const FileManagerPlugin = require("filemanager-webpack-plugin");
 
 module.exports = {
     entry: {
-        scripts: "./src/js/index.js",
+        scripts: "./src/js/scripts.js",
     },
     output: {
         filename: "js/[name].js",

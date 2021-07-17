@@ -16,19 +16,17 @@
 // @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 
 //
-// Core Elements
+// Core Styles
 // -------------------------
 
 @import "core/vars";
 @import "core/block";
 @import "core/grid";
-@import "core/main";
+@import "core/elements";
+@import "core/content";
 
 //
-// Optional Elements
+// Components
 // -------------------------
 
-@import "optional/content";
-// @import "core/asides";
-// @import "core/wordpress";
-// @import "core/utils";
+@import "components/button/button";
