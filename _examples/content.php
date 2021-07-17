@@ -5,7 +5,10 @@
 <p>Ut quis magna nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla malesuada turpis sit amet orci consectetur mollis. Sed eu ex sollicitudin, efficitur augue id, iaculis nibh. Nam nisl nisl, maximus in lobortis in, placerat eleifend mi. In vitae arcu malesuada, congue urna vitae, volutpat ante.</p>
 <h4>Header 4</h4>
 <p>Aenean semper tortor nisi, in tempus magna varius a. In laoreet interdum tincidunt. Curabitur accumsan, ex sed laoreet lobortis, ante augue dignissim urna, a efficitur nisi ligula vitae dui. In eleifend ante nunc, sit amet tempus ipsum vulputate ac. Quisque eu sollicitudin mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-<button type="button">Button Example</button>
+<p><button class="c-button" type="button">Button Example</button></p>
+<p>Aenean semper tortor nisi, in tempus magna varius a. In laoreet interdum tincidunt. Curabitur accumsan, ex sed laoreet lobortis, ante augue dignissim urna, a efficitur nisi ligula vitae dui. In eleifend ante nunc, sit amet tempus ipsum vulputate ac. Quisque eu sollicitudin mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+<p>Aenean semper tortor nisi, in tempus magna varius a. In laoreet interdum tincidunt. Curabitur accumsan, ex sed laoreet lobortis, ante augue dignissim urna, a efficitur nisi ligula vitae dui. In eleifend ante nunc, sit amet tempus ipsum vulputate ac. Quisque eu sollicitudin mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+<button class="c-button" type="button">Button Example</button>
 <p>Aenean semper tortor nisi, in tempus magna varius a. In laoreet interdum tincidunt. Curabitur accumsan, ex sed laoreet lobortis, ante augue dignissim urna, a efficitur nisi ligula vitae dui. In eleifend ante nunc, sit amet tempus ipsum vulputate ac. Quisque eu sollicitudin mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 <h2>Header 2</h2>
 <h3>Header 3</h3>
@@ -23,7 +26,10 @@
    <p>Ut quis magna nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla malesuada turpis sit amet orci consectetur mollis. Sed eu ex sollicitudin, efficitur augue id, iaculis nibh. Nam nisl nisl, maximus in lobortis in, placerat eleifend mi. In vitae arcu malesuada, congue urna vitae, volutpat ante.</p>
    <h4>Header 4</h4>
    <p>Aenean semper tortor nisi, in tempus magna varius a. In laoreet interdum tincidunt. Curabitur accumsan, ex sed laoreet lobortis, ante augue dignissim urna, a efficitur nisi ligula vitae dui. In eleifend ante nunc, sit amet tempus ipsum vulputate ac. Quisque eu sollicitudin mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-   <button type="button">Button Example</button>
+   <p><button class="c-button" type="button">Button Example</button></p>
+   <p>Aenean semper tortor nisi, in tempus magna varius a. In laoreet interdum tincidunt. Curabitur accumsan, ex sed laoreet lobortis, ante augue dignissim urna, a efficitur nisi ligula vitae dui. In eleifend ante nunc, sit amet tempus ipsum vulputate ac. Quisque eu sollicitudin mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+   <p>Aenean semper tortor nisi, in tempus magna varius a. In laoreet interdum tincidunt. Curabitur accumsan, ex sed laoreet lobortis, ante augue dignissim urna, a efficitur nisi ligula vitae dui. In eleifend ante nunc, sit amet tempus ipsum vulputate ac. Quisque eu sollicitudin mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+   <button class="c-button" type="button">Button Example</button>
    <p>Aenean semper tortor nisi, in tempus magna varius a. In laoreet interdum tincidunt. Curabitur accumsan, ex sed laoreet lobortis, ante augue dignissim urna, a efficitur nisi ligula vitae dui. In eleifend ante nunc, sit amet tempus ipsum vulputate ac. Quisque eu sollicitudin mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
    <h2>Header 2</h2>
    <h3>Header 3</h3>

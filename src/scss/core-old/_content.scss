@@ -178,10 +178,10 @@ input[type="submit"] {
 // Blockquote
 // -----------------------------
 
-// // Fix padding on table outside of u-block
-// :not(.u-block) > blockquote {
-//     max-width: #{map-get($breakpoints, s)};
-// }
+// Fix padding on table outside of u-block
+:not(.u-block) > blockquote {
+    max-width: #{map-get($breakpoints, s)};
+}
 
 // blockquote p {
 //     font-style: italic;

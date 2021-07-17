@@ -147,10 +147,15 @@ ol ol ol {
 // -----------------------------
 
 // TODO: Fix padding on blockquote
-// :not(.u-block) > blockquote,
-// .u-block > blockquote {
-//     max-width: #{map-get($breakpoints, s)};
-// }
+:not(.u-block) > blockquote,
+.u-block > blockquote {
+    max-width: #{map-get($breakpoints, s) - $spacingMedium};
+    // max-width: #{map-get($breakpoints, s)};
+    // margin-left: 50px;
+    // margin-right: 50px;
+    // margin-left: calc(10% - 100px);
+    // margin-right: calc(10% - 100px);
+}
 
 blockquote {
     font-style: italic;
